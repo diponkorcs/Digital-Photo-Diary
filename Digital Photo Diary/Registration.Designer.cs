@@ -202,6 +202,7 @@ namespace Digital_Photo_Diary
             this.submitButton.TabIndex = 22;
             this.submitButton.Text = "Submit";
             this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
             // 
             // termscheckBox
             // 
@@ -230,6 +231,7 @@ namespace Digital_Photo_Diary
             this.bloodgroupTextBox.Name = "bloodgroupTextBox";
             this.bloodgroupTextBox.Size = new System.Drawing.Size(166, 24);
             this.bloodgroupTextBox.TabIndex = 20;
+            this.bloodgroupTextBox.SelectedIndexChanged += new System.EventHandler(this.bloodgroupTextBox_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -279,6 +281,7 @@ namespace Digital_Photo_Diary
             this.dateTimePicker.Size = new System.Drawing.Size(166, 23);
             this.dateTimePicker.TabIndex = 15;
             this.dateTimePicker.Value = new System.DateTime(2021, 4, 16, 0, 0, 0, 0);
+            this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
             // label4
             // 
@@ -295,6 +298,7 @@ namespace Digital_Photo_Diary
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(166, 23);
             this.emailTextBox.TabIndex = 13;
+            this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
             // label3
             // 
@@ -312,6 +316,7 @@ namespace Digital_Photo_Diary
             this.passTextBox.PasswordChar = '*';
             this.passTextBox.Size = new System.Drawing.Size(166, 23);
             this.passTextBox.TabIndex = 11;
+            this.passTextBox.TextChanged += new System.EventHandler(this.passTextBox_TextChanged);
             // 
             // label6
             // 
@@ -329,6 +334,7 @@ namespace Digital_Photo_Diary
             this.cpassTextBox.PasswordChar = '*';
             this.cpassTextBox.Size = new System.Drawing.Size(166, 23);
             this.cpassTextBox.TabIndex = 9;
+            this.cpassTextBox.TextChanged += new System.EventHandler(this.cpassTextBox_TextChanged);
             // 
             // label5
             // 
@@ -345,6 +351,7 @@ namespace Digital_Photo_Diary
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(166, 23);
             this.usernameTextBox.TabIndex = 3;
+            this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
             // 
             // label2
             // 
@@ -361,6 +368,7 @@ namespace Digital_Photo_Diary
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(166, 23);
             this.nameTextBox.TabIndex = 1;
+            this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
             // label1
             // 
@@ -378,6 +386,7 @@ namespace Digital_Photo_Diary
             this.ClientSize = new System.Drawing.Size(366, 478);
             this.Controls.Add(this.groupBox1);
             this.Name = "Registration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Registration_FormClosing);
             this.groupBox1.ResumeLayout(false);

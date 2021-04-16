@@ -82,6 +82,60 @@ namespace Digital_Photo_Diary
             }
         }
 
-        
+        private void nameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (nameWarning.Visible == true)
+            {
+                nameWarning.Visible = false;
+            }
+        }
+
+        private void usernameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (usernameWarning.Visible == true)
+            {
+                usernameWarning.Visible = false;
+            }
+        }
+
+        private void passTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (passWarning.Visible == true)
+            {
+                passWarning.Visible = false;
+            }
+        }
+
+        private void cpassTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (cpassWarning.Visible == true)
+            {
+                cpassWarning.Visible = false;
+            }
+        }
+
+        private void emailTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (emailWarning.Visible == true)
+            {
+                emailWarning.Visible = false;
+            }
+        }
+
+        private void dateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            if (dobWarning.Visible == true)
+            {
+                dobWarning.Visible = false;
+            }
+        }
+
+        private void bloodgroupTextBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(bgWarning.Visible == true)
+            {
+                bgWarning.Visible = false;
+            }
+        }
     }
 }

@@ -74,6 +74,7 @@ namespace Digital_Photo_Diary
             this.Controls.Add(this.quoteLabel);
             this.Controls.Add(this.welcomeLabel);
             this.Name = "Opening";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Opening_FormClosing);
             this.Load += new System.EventHandler(this.Opening_Load);

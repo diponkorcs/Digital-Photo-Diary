@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Create Event.cs">
+    <Compile Include="CreateEvent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Create Event.Designer.cs">
-      <DependentUpon>Create Event.cs</DependentUpon>
+    <Compile Include="CreateEvent.Designer.cs">
+      <DependentUpon>CreateEvent.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -78,8 +78,8 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Create Event.resx">
-      <DependentUpon>Create Event.cs</DependentUpon>
+    <EmbeddedResource Include="CreateEvent.resx">
+      <DependentUpon>CreateEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Digital_Photo_Diary
 {
-    public partial class createEvent : Form
+    public partial class CreateEvent : Form
     {
-        public createEvent()
+        public CreateEvent()
         {
             InitializeComponent();
         }

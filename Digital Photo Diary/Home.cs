@@ -21,5 +21,12 @@ namespace Digital_Photo_Diary
         {
             Application.Exit();
         }
+
+        private void createButton_Click(object sender, EventArgs e)
+        {
+            CreateEvent cevent = new CreateEvent();
+            cevent.Show();
+            this.Hide();
+        }
     }
 }

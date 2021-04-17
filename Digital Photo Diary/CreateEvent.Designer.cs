@@ -1,7 +1,7 @@
 ﻿
 namespace Digital_Photo_Diary
 {
-    partial class createEvent
+    partial class CreateEvent
     {
         /// <summary>
         /// Required designer variable.
@@ -157,7 +157,7 @@ namespace Digital_Photo_Diary
             this.deleteButton.Text = "Delete Event";
             this.deleteButton.UseVisualStyleBackColor = true;
             // 
-            // createEvent
+            // CreateEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -174,7 +174,7 @@ namespace Digital_Photo_Diary
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.nameLabel);
-            this.Name = "createEvent";
+            this.Name = "CreateEvent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create Event";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.createEvent_FormClosing);

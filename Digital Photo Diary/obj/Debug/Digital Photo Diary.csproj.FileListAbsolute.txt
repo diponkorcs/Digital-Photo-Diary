@@ -9,3 +9,4 @@ E:\AIUB Semester 08\C#\Final\Assignment\Digital-Photo-Diary\Digital Photo Diary\
 E:\AIUB Semester 08\C#\Final\Assignment\Digital-Photo-Diary\Digital Photo Diary\obj\Debug\Digital Photo Diary.csproj.CoreCompileInputs.cache
 E:\AIUB Semester 08\C#\Final\Assignment\Digital-Photo-Diary\Digital Photo Diary\obj\Debug\Digital Photo Diary.exe
 E:\AIUB Semester 08\C#\Final\Assignment\Digital-Photo-Diary\Digital Photo Diary\obj\Debug\Digital Photo Diary.pdb
+E:\AIUB Semester 08\C#\Final\Assignment\Digital-Photo-Diary\Digital Photo Diary\obj\Debug\Digital_Photo_Diary.SignUp.resources

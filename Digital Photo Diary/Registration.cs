@@ -74,12 +74,13 @@ namespace Digital_Photo_Diary
                 }
                 else
                 {
-                    //Print print = new Print(this);
-                    //print.Show();
-                    //this.Hide();
+                    SignUp signup = new SignUp();
+                    signup.Show();
+                    this.Hide();
                     //Database
                 }
             }
+            MessageBox.Show("Account Created. Go Back to Login Page To Login.");
         }
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)

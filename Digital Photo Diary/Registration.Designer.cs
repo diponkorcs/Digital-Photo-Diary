@@ -162,7 +162,7 @@ namespace Digital_Photo_Diary
             this.passWarning.AutoSize = true;
             this.passWarning.Font = new System.Drawing.Font("Maiandra GD", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passWarning.ForeColor = System.Drawing.Color.Red;
-            this.passWarning.Location = new System.Drawing.Point(148, 148);
+            this.passWarning.Location = new System.Drawing.Point(148, 143);
             this.passWarning.Name = "passWarning";
             this.passWarning.Size = new System.Drawing.Size(144, 14);
             this.passWarning.TabIndex = 25;
@@ -386,8 +386,7 @@ namespace Digital_Photo_Diary
             this.ClientSize = new System.Drawing.Size(366, 478);
             this.Controls.Add(this.groupBox1);
             this.Name = "Registration";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registration";
+            this.Text = "Create New Account";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Registration_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

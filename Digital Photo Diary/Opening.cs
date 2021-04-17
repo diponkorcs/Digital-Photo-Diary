@@ -29,8 +29,8 @@ namespace Digital_Photo_Diary
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            Registration reg = new Registration();
-            reg.Show();
+            SignUp signup = new SignUp();
+            signup.Show();
             this.Hide();
         }
     }

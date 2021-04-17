@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Digital_Photo_Diary
 {
-    public partial class Create_Event : Form
+    public partial class createEvent : Form
     {
-        public Create_Event()
+        public createEvent()
         {
             InitializeComponent();
+        }
+
+        private void createEvent_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

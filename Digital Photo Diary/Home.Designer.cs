@@ -82,6 +82,7 @@ namespace Digital_Photo_Diary
             this.Controls.Add(this.viewButton);
             this.Controls.Add(this.createButton);
             this.Name = "Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Home_FormClosing);
             this.ResumeLayout(false);

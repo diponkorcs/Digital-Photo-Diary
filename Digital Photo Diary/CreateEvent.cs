@@ -21,5 +21,13 @@ namespace Digital_Photo_Diary
         {
             Application.Exit();
         }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Your Event Saved Successfully.");
+            Home home = new Home();
+            home.Show();
+            this.Hide();
+        }
     }
 }

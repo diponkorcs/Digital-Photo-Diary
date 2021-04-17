@@ -12,9 +12,14 @@ namespace Digital_Photo_Diary
 {
     public partial class SignUp : Form
     {
+
+        //Registration registration;
+        //Opening opening;
         public SignUp()
         {
             InitializeComponent();
+            //this.registration = registration;
+            //this.opening = opening;
         }
 
         private void SignUp_FormClosing(object sender, FormClosingEventArgs e)
@@ -38,6 +43,19 @@ namespace Digital_Photo_Diary
             {
                 passWarning.Visible = true;
             }
+            else
+            {
+                Home home = new Home();
+                home.Show();
+                this.Hide();
+            }
+                
+            /*if (this.nameTextBox.Text != nameTextBox.Text || this.emailTextBox.Text != emailTextBox.Text || this.passTextBox.Text != passTextBox.Text)
+            {
+                MessageBox.Show("User does not found!!" +
+                    "If you don't have an account please Sign Up.");
+            }*/
+
         }
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)

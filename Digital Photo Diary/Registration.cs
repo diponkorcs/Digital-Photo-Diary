@@ -77,10 +77,10 @@ namespace Digital_Photo_Diary
                     SignUp signup = new SignUp();
                     signup.Show();
                     this.Hide();
+                    MessageBox.Show("Account Created. Go Back to Login Page To Login.");
                     //Database
                 }
             }
-            MessageBox.Show("Account Created. Go Back to Login Page To Login.");
         }
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)

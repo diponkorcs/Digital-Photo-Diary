@@ -407,22 +407,65 @@ namespace Digital_Photo_Diary
         private System.Windows.Forms.Label nameWarning;
         private System.Windows.Forms.Button submitButton;
         private System.Windows.Forms.CheckBox termscheckBox;
-        public System.Windows.Forms.ComboBox bloodgroupTextBox;
+        private System.Windows.Forms.ComboBox bloodgroupTextBox;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.RadioButton femaleRadioButton;
         public System.Windows.Forms.RadioButton maleRadioButton;
         private System.Windows.Forms.Label label7;
-        public System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox passTextBox;
+        private System.Windows.Forms.TextBox passTextBox;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.TextBox cpassTextBox;
+        private System.Windows.Forms.TextBox cpassTextBox;
         private System.Windows.Forms.Label label5;
-        public System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.TextBox usernameTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label label1;
+
+
+        public string NameTextBox
+        {
+            set { this.nameTextBox.Text = value; }
+            get { return this.nameTextBox.Text; }
+        }
+
+        public string UserNameTextBox
+        {
+            set { this.usernameTextBox.Text = value; }
+            get { return this.usernameTextBox.Text; }
+        }
+
+        public string PassTextBox
+        {
+            set { this.passTextBox.Text = value; }
+            get { return this.passTextBox.Text; }
+        }
+
+        public string CpassTextBox
+        {
+            set { this.cpassTextBox.Text = value; }
+            get { return this.cpassTextBox.Text; }
+        }
+
+        public string EmailTextBox
+        {
+            set { this.emailTextBox.Text = value; }
+            get { return this.emailTextBox.Text; }
+        }
+
+        public string DateTimePicker
+        {
+            set { this.dateTimePicker.Text = value; }
+            get { return this.dateTimePicker.Text; }
+        }
+
+        public string BloodGroupTextBox
+        {
+            set { this.bloodgroupTextBox.Text = value; }
+            get { return this.bloodgroupTextBox.Text; }
+        }
     }
 }

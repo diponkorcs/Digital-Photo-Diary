@@ -1,5 +1,4 @@
-﻿
-namespace Digital_Photo_Diary
+﻿namespace Digital_Photo_Diary
 {
     partial class Opening
     {

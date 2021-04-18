@@ -41,6 +41,8 @@ namespace Digital_Photo_Diary
             this.saveButton = new System.Windows.Forms.Button();
             this.discardButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.importanceLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.createPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,11 +160,35 @@ namespace Digital_Photo_Diary
             this.deleteButton.Text = "Delete Event";
             this.deleteButton.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "High",
+            "Moderate",
+            "Less Importance"});
+            this.comboBox1.Location = new System.Drawing.Point(461, 235);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 12;
+            // 
+            // importanceLabel
+            // 
+            this.importanceLabel.AutoSize = true;
+            this.importanceLabel.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.importanceLabel.Location = new System.Drawing.Point(372, 236);
+            this.importanceLabel.Name = "importanceLabel";
+            this.importanceLabel.Size = new System.Drawing.Size(83, 16);
+            this.importanceLabel.TabIndex = 13;
+            this.importanceLabel.Text = "Importance";
+            // 
             // CreateEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(708, 485);
+            this.Controls.Add(this.importanceLabel);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.discardButton);
             this.Controls.Add(this.saveButton);
@@ -199,5 +225,7 @@ namespace Digital_Photo_Diary
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button discardButton;
         private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label importanceLabel;
     }
 }

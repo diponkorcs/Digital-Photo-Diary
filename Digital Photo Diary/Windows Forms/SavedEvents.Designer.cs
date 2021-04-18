@@ -29,10 +29,17 @@ namespace Digital_Photo_Diary.Windows_Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // SavedEvents
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(657, 485);
+            this.Name = "SavedEvents";
             this.Text = "SavedEvents";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

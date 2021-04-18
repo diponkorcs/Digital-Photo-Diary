@@ -36,10 +36,10 @@
             // welcomeLabel
             // 
             this.welcomeLabel.AutoSize = true;
-            this.welcomeLabel.Font = new System.Drawing.Font("Maiandra GD", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLabel.Location = new System.Drawing.Point(49, 36);
+            this.welcomeLabel.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcomeLabel.Location = new System.Drawing.Point(64, 34);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(405, 29);
+            this.welcomeLabel.Size = new System.Drawing.Size(374, 33);
             this.welcomeLabel.TabIndex = 0;
             this.welcomeLabel.Text = "Welcome To Your Event Scheduler";
             // 
@@ -47,7 +47,7 @@
             // 
             this.quoteLabel.AutoSize = true;
             this.quoteLabel.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quoteLabel.Location = new System.Drawing.Point(106, 95);
+            this.quoteLabel.Location = new System.Drawing.Point(116, 102);
             this.quoteLabel.Name = "quoteLabel";
             this.quoteLabel.Size = new System.Drawing.Size(280, 19);
             this.quoteLabel.TabIndex = 1;
@@ -56,7 +56,7 @@
             // startButton
             // 
             this.startButton.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startButton.Location = new System.Drawing.Point(184, 151);
+            this.startButton.Location = new System.Drawing.Point(195, 156);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(115, 46);
             this.startButton.TabIndex = 2;

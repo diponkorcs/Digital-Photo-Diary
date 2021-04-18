@@ -32,5 +32,15 @@ namespace Digital_Photo_Diary.Codes
             this.userDataAccess = new UserDataAccess();
             return this.userDataAccess.AddUser(user);
         }
+
+        public string LoginValidation(string userName)
+        {
+            User user = new User()
+            {
+                UserName = userName,
+                
+            };
+            return userDataAccess.Search(user);
+        }
     }
 }

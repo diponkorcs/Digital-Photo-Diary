@@ -161,11 +161,11 @@ namespace Digital_Photo_Diary
             // 
             this.nameLabel.AutoSize = true;
             this.nameLabel.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLabel.Location = new System.Drawing.Point(61, 32);
+            this.nameLabel.Location = new System.Drawing.Point(27, 32);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(45, 16);
+            this.nameLabel.Size = new System.Drawing.Size(79, 16);
             this.nameLabel.TabIndex = 24;
-            this.nameLabel.Text = "Name";
+            this.nameLabel.Text = "User Name";
             // 
             // label1
             // 

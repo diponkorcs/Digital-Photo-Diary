@@ -92,7 +92,6 @@ namespace Digital_Photo_Diary
                     this.Hide();
 
                     MessageBox.Show("Account Created. Go Back to Login Page To Login.");
-                    //Database
                 }
             }
         }

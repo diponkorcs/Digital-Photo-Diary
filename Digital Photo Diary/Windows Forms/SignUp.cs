@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Digital_Photo_Diary.Codes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,7 +32,7 @@ namespace Digital_Photo_Diary
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            if(nameTextBox.Text=="")
+            if (nameTextBox.Text=="")
             {
                 nameWarning.Visible = true;
             }
@@ -45,9 +46,22 @@ namespace Digital_Photo_Diary
             }
             else
             {
-                Home home = new Home();
-                home.Show();
-                this.Hide();
+                UserRegistrationService registrationService = new UserRegistrationService();
+                string result = registrationService.LoginValidation(nameTextBox.Text);
+                if (result == nameTextBox.Text)
+                {
+                    Home home = new Home();
+                    home.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("User Does Not Found!!" +
+                        "If You Don't Have an Account, Please Sign Up.");
+                    nameTextBox.Text = "";
+                    emailTextBox.Text = "";
+                    passTextBox.Text = "";
+                }
             }
                 
             /*if (this.nameTextBox.Text != nameTextBox.Text || this.emailTextBox.Text != emailTextBox.Text || this.passTextBox.Text != passTextBox.Text)

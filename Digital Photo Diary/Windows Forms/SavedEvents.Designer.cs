@@ -42,6 +42,7 @@ namespace Digital_Photo_Diary.Windows_Forms
             this.storyLabel = new System.Windows.Forms.Label();
             this.iLabel = new System.Windows.Forms.Label();
             this.dLabel = new System.Windows.Forms.Label();
+            this.backButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.createPictureBox)).BeginInit();
             this.storyGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -177,11 +178,23 @@ namespace Digital_Photo_Diary.Windows_Forms
             this.dLabel.Text = "Date";
             this.dLabel.Visible = false;
             // 
+            // backButton
+            // 
+            this.backButton.Font = new System.Drawing.Font("Maiandra GD", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.Location = new System.Drawing.Point(12, 446);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(72, 24);
+            this.backButton.TabIndex = 35;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
             // SavedEvents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 485);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.dLabel);
             this.Controls.Add(this.iLabel);
             this.Controls.Add(this.storyGroupBox);
@@ -222,5 +235,6 @@ namespace Digital_Photo_Diary.Windows_Forms
         private System.Windows.Forms.Label storyLabel;
         private System.Windows.Forms.Label iLabel;
         private System.Windows.Forms.Label dLabel;
+        private System.Windows.Forms.Button backButton;
     }
 }

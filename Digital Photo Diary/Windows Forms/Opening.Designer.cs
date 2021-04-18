@@ -37,7 +37,7 @@
             // 
             this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.Font = new System.Drawing.Font("Maiandra GD", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLabel.Location = new System.Drawing.Point(12, 32);
+            this.welcomeLabel.Location = new System.Drawing.Point(49, 36);
             this.welcomeLabel.Name = "welcomeLabel";
             this.welcomeLabel.Size = new System.Drawing.Size(405, 29);
             this.welcomeLabel.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             this.quoteLabel.AutoSize = true;
             this.quoteLabel.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quoteLabel.Location = new System.Drawing.Point(75, 89);
+            this.quoteLabel.Location = new System.Drawing.Point(106, 95);
             this.quoteLabel.Name = "quoteLabel";
             this.quoteLabel.Size = new System.Drawing.Size(280, 19);
             this.quoteLabel.TabIndex = 1;
@@ -56,7 +56,7 @@
             // startButton
             // 
             this.startButton.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startButton.Location = new System.Drawing.Point(153, 150);
+            this.startButton.Location = new System.Drawing.Point(184, 151);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(115, 46);
             this.startButton.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 275);
+            this.ClientSize = new System.Drawing.Size(500, 275);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.quoteLabel);
             this.Controls.Add(this.welcomeLabel);

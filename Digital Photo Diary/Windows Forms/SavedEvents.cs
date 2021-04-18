@@ -31,5 +31,12 @@ namespace Digital_Photo_Diary.Windows_Forms
         {
 
         }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+            this.Hide();
+        }
     }
 }

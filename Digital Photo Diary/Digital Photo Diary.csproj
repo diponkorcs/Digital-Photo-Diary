@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,6 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Codes\UserRegistrationService.cs" />
+    <Compile Include="Data Access Layer\DataAccess.cs" />
+    <Compile Include="Data Access Layer\Entities\User.cs" />
+    <Compile Include="Data Access Layer\UserDataAccess.cs" />
     <Compile Include="Windows Forms\CreateEvent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,8 +129,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Codes\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

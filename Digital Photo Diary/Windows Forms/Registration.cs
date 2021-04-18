@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Digital_Photo_Diary.Codes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -74,9 +75,22 @@ namespace Digital_Photo_Diary
                 }
                 else
                 {
+                    string gender = "";
+                    if(maleRadioButton.Checked)
+                    {
+                        gender = "Male";
+                    }
+                    else
+                    {
+                        gender = "Female";
+                    }
+                    UserRegistrationService urs = new UserRegistrationService();
+                    urs.AddUser(NameTextBox, UserNameTextBox, PassTextBox, EmailTextBox, gender, DateTimePicker, BloodGroupTextBox);
+
                     SignUp signup = new SignUp();
                     signup.Show();
                     this.Hide();
+
                     MessageBox.Show("Account Created. Go Back to Login Page To Login.");
                     //Database
                 }

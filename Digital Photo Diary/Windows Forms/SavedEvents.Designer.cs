@@ -123,7 +123,7 @@ namespace Digital_Photo_Diary.Windows_Forms
             // 
             this.dateLabel.AutoSize = true;
             this.dateLabel.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateLabel.Location = new System.Drawing.Point(586, 19);
+            this.dateLabel.Location = new System.Drawing.Point(540, 21);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(78, 16);
             this.dateLabel.TabIndex = 31;
@@ -166,7 +166,7 @@ namespace Digital_Photo_Diary.Windows_Forms
             // 
             this.dLabel.AutoSize = true;
             this.dLabel.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dLabel.Location = new System.Drawing.Point(670, 19);
+            this.dLabel.Location = new System.Drawing.Point(624, 21);
             this.dLabel.Name = "dLabel";
             this.dLabel.Size = new System.Drawing.Size(37, 16);
             this.dLabel.TabIndex = 34;

@@ -71,12 +71,13 @@ namespace Digital_Photo_Diary
             storyTextBox.Text = "";
             importanceComboBox.Text = "";
             //createPictureBox.Image = null;
+            panel1.Controls.Clear();
         }
 
         private void browseButton_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "Image Files(*.jpg; *.jpeg; *.png; .bmp)|.jpg; *.jpeg; *.png; *.bmp";
+            openFile.Filter = "Image Files(*.jpg; *.jpeg; *.png; *.JPG; .bmp)|.jpg; *.jpeg; *.png; *.JPG; *.bmp";
 
             if (openFile.ShowDialog() == DialogResult.OK)
             {

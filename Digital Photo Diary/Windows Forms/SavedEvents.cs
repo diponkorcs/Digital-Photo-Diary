@@ -71,7 +71,7 @@ namespace Digital_Photo_Diary.Windows_Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
 
             panel1.Controls.Clear();
             PicturesService picturesService = new PicturesService();

@@ -36,13 +36,19 @@ namespace Digital_Photo_Diary
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            
             MessageBox.Show("Your Event Saved Successfully.");
             Home home = new Home();
             home.Show();
             this.Hide();
         }
 
-        
+        private void discardButton_Click(object sender, EventArgs e)
+        {
+            eventnameTextBox.Text = "";
+            dateTimePicker1.Text = "";
+            storyTextBox.Text = "";
+            importanceComboBox.Text = "";
+            createPictureBox.Image = null;
+        }
     }
 }

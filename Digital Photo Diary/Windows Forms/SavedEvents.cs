@@ -26,5 +26,10 @@ namespace Digital_Photo_Diary.Windows_Forms
         {
             Application.Exit();
         }
+
+        private void SavedEvents_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

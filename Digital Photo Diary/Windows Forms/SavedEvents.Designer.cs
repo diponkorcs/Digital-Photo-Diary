@@ -68,6 +68,7 @@ namespace Digital_Photo_Diary.Windows_Forms
             // 
             // saveButton
             // 
+            this.saveButton.Enabled = false;
             this.saveButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButton.Location = new System.Drawing.Point(571, 431);
             this.saveButton.Name = "saveButton";
@@ -192,8 +193,10 @@ namespace Digital_Photo_Diary.Windows_Forms
             this.Controls.Add(this.createPictureBox);
             this.Controls.Add(this.pictureLabel);
             this.Name = "SavedEvents";
-            this.Text = "SavedEvents";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Saved Events";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SavedEvents_FormClosing);
+            this.Load += new System.EventHandler(this.SavedEvents_Load);
             ((System.ComponentModel.ISupportInitialize)(this.createPictureBox)).EndInit();
             this.storyGroupBox.ResumeLayout(false);
             this.storyGroupBox.PerformLayout();

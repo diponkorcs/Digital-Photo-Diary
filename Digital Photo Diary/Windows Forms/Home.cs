@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Digital_Photo_Diary.Windows_Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,6 +27,13 @@ namespace Digital_Photo_Diary
         {
             CreateEvent cevent = new CreateEvent();
             cevent.Show();
+            this.Hide();
+        }
+
+        private void viewButton_Click(object sender, EventArgs e)
+        {
+            SavedEvents sevent = new SavedEvents();
+            sevent.Show();
             this.Hide();
         }
     }

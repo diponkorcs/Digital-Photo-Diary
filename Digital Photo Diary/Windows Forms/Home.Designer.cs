@@ -55,6 +55,7 @@ namespace Digital_Photo_Diary
             this.viewButton.TabIndex = 1;
             this.viewButton.Text = "View Saved Events";
             this.viewButton.UseVisualStyleBackColor = true;
+            this.viewButton.Click += new System.EventHandler(this.viewButton_Click);
             // 
             // lastLabel
             // 

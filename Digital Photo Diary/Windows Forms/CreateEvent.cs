@@ -22,12 +22,27 @@ namespace Digital_Photo_Diary
             Application.Exit();
         }
 
+        private void eventnameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (eventnameTextBox.Text == "")
+            {
+                saveButton.Enabled = false;
+            }
+            else
+            {
+                saveButton.Enabled = true;
+            }
+        }
+
         private void saveButton_Click(object sender, EventArgs e)
         {
+            
             MessageBox.Show("Your Event Saved Successfully.");
             Home home = new Home();
             home.Show();
             this.Hide();
         }
+
+        
     }
 }

@@ -30,7 +30,7 @@ namespace Digital_Photo_Diary
         private void InitializeComponent()
         {
             this.nameLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.eventnameTextBox = new System.Windows.Forms.TextBox();
             this.dateLabel = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -40,7 +40,6 @@ namespace Digital_Photo_Diary
             this.browseButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
             this.discardButton = new System.Windows.Forms.Button();
-            this.deleteButton = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.importanceLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.createPictureBox)).BeginInit();
@@ -56,12 +55,13 @@ namespace Digital_Photo_Diary
             this.nameLabel.TabIndex = 0;
             this.nameLabel.Text = "Event Name";
             // 
-            // textBox1
+            // eventnameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(141, 20);
-            this.textBox1.TabIndex = 1;
+            this.eventnameTextBox.Location = new System.Drawing.Point(126, 18);
+            this.eventnameTextBox.Name = "eventnameTextBox";
+            this.eventnameTextBox.Size = new System.Drawing.Size(141, 20);
+            this.eventnameTextBox.TabIndex = 1;
+            this.eventnameTextBox.TextChanged += new System.EventHandler(this.eventnameTextBox_TextChanged);
             // 
             // dateLabel
             // 
@@ -124,17 +124,18 @@ namespace Digital_Photo_Diary
             this.browseButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.browseButton.Location = new System.Drawing.Point(126, 446);
             this.browseButton.Name = "browseButton";
-            this.browseButton.Size = new System.Drawing.Size(90, 23);
+            this.browseButton.Size = new System.Drawing.Size(99, 27);
             this.browseButton.TabIndex = 8;
             this.browseButton.Text = "Browse";
             this.browseButton.UseVisualStyleBackColor = true;
             // 
             // saveButton
             // 
+            this.saveButton.Enabled = false;
             this.saveButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButton.Location = new System.Drawing.Point(579, 434);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(113, 35);
+            this.saveButton.Size = new System.Drawing.Size(113, 39);
             this.saveButton.TabIndex = 9;
             this.saveButton.Text = "Save Event";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -145,20 +146,10 @@ namespace Digital_Photo_Diary
             this.discardButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.discardButton.Location = new System.Drawing.Point(460, 434);
             this.discardButton.Name = "discardButton";
-            this.discardButton.Size = new System.Drawing.Size(113, 35);
+            this.discardButton.Size = new System.Drawing.Size(113, 39);
             this.discardButton.TabIndex = 10;
             this.discardButton.Text = "Discard";
             this.discardButton.UseVisualStyleBackColor = true;
-            // 
-            // deleteButton
-            // 
-            this.deleteButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteButton.Location = new System.Drawing.Point(341, 434);
-            this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(113, 35);
-            this.deleteButton.TabIndex = 11;
-            this.deleteButton.Text = "Delete Event";
-            this.deleteButton.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -186,10 +177,9 @@ namespace Digital_Photo_Diary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(708, 485);
+            this.ClientSize = new System.Drawing.Size(716, 485);
             this.Controls.Add(this.importanceLabel);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.discardButton);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.browseButton);
@@ -199,7 +189,7 @@ namespace Digital_Photo_Diary
             this.Controls.Add(this.storyLabel);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dateLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.eventnameTextBox);
             this.Controls.Add(this.nameLabel);
             this.Name = "CreateEvent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -214,7 +204,7 @@ namespace Digital_Photo_Diary
         #endregion
 
         private System.Windows.Forms.Label nameLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox eventnameTextBox;
         private System.Windows.Forms.Label dateLabel;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox2;
@@ -224,7 +214,6 @@ namespace Digital_Photo_Diary
         private System.Windows.Forms.Button browseButton;
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button discardButton;
-        private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label importanceLabel;
     }

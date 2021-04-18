@@ -16,5 +16,15 @@ namespace Digital_Photo_Diary.Windows_Forms
         {
             InitializeComponent();
         }
+
+        private void selectLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SavedEvents_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

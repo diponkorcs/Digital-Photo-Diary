@@ -32,7 +32,6 @@ namespace Digital_Photo_Diary.Windows_Forms
             this.importanceLabel = new System.Windows.Forms.Label();
             this.deleteButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
-            this.createPictureBox = new System.Windows.Forms.PictureBox();
             this.pictureLabel = new System.Windows.Forms.Label();
             this.selectLabel = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -43,7 +42,9 @@ namespace Digital_Photo_Diary.Windows_Forms
             this.iLabel = new System.Windows.Forms.Label();
             this.dLabel = new System.Windows.Forms.Label();
             this.backButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.createPictureBox)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.showButton = new System.Windows.Forms.Button();
             this.storyGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,7 @@ namespace Digital_Photo_Diary.Windows_Forms
             // 
             this.importanceLabel.AutoSize = true;
             this.importanceLabel.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.importanceLabel.Location = new System.Drawing.Point(278, 19);
+            this.importanceLabel.Location = new System.Drawing.Point(535, 52);
             this.importanceLabel.Name = "importanceLabel";
             this.importanceLabel.Size = new System.Drawing.Size(83, 16);
             this.importanceLabel.TabIndex = 27;
@@ -78,14 +79,6 @@ namespace Digital_Photo_Diary.Windows_Forms
             this.saveButton.Text = "Save Event";
             this.saveButton.UseVisualStyleBackColor = true;
             // 
-            // createPictureBox
-            // 
-            this.createPictureBox.Location = new System.Drawing.Point(118, 233);
-            this.createPictureBox.Name = "createPictureBox";
-            this.createPictureBox.Size = new System.Drawing.Size(192, 195);
-            this.createPictureBox.TabIndex = 21;
-            this.createPictureBox.TabStop = false;
-            // 
             // pictureLabel
             // 
             this.pictureLabel.AutoSize = true;
@@ -100,7 +93,7 @@ namespace Digital_Photo_Diary.Windows_Forms
             // 
             this.selectLabel.AutoSize = true;
             this.selectLabel.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectLabel.Location = new System.Drawing.Point(26, 19);
+            this.selectLabel.Location = new System.Drawing.Point(184, 22);
             this.selectLabel.Name = "selectLabel";
             this.selectLabel.Size = new System.Drawing.Size(86, 16);
             this.selectLabel.TabIndex = 28;
@@ -110,10 +103,11 @@ namespace Digital_Photo_Diary.Windows_Forms
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(118, 18);
+            this.comboBox2.Location = new System.Drawing.Point(276, 21);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 29;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // editButton
             // 
@@ -129,7 +123,7 @@ namespace Digital_Photo_Diary.Windows_Forms
             // 
             this.dateLabel.AutoSize = true;
             this.dateLabel.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateLabel.Location = new System.Drawing.Point(496, 19);
+            this.dateLabel.Location = new System.Drawing.Point(586, 19);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(78, 16);
             this.dateLabel.TabIndex = 31;
@@ -139,9 +133,9 @@ namespace Digital_Photo_Diary.Windows_Forms
             // 
             this.storyGroupBox.Controls.Add(this.storyLabel);
             this.storyGroupBox.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.storyGroupBox.Location = new System.Drawing.Point(57, 45);
+            this.storyGroupBox.Location = new System.Drawing.Point(57, 72);
             this.storyGroupBox.Name = "storyGroupBox";
-            this.storyGroupBox.Size = new System.Drawing.Size(517, 171);
+            this.storyGroupBox.Size = new System.Drawing.Size(517, 144);
             this.storyGroupBox.TabIndex = 32;
             this.storyGroupBox.TabStop = false;
             this.storyGroupBox.Text = "Story";
@@ -160,18 +154,19 @@ namespace Digital_Photo_Diary.Windows_Forms
             // 
             this.iLabel.AutoSize = true;
             this.iLabel.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iLabel.Location = new System.Drawing.Point(363, 19);
+            this.iLabel.Location = new System.Drawing.Point(624, 52);
             this.iLabel.Name = "iLabel";
             this.iLabel.Size = new System.Drawing.Size(83, 16);
             this.iLabel.TabIndex = 33;
             this.iLabel.Text = "Importance";
             this.iLabel.Visible = false;
+            this.iLabel.Click += new System.EventHandler(this.iLabel_Click);
             // 
             // dLabel
             // 
             this.dLabel.AutoSize = true;
             this.dLabel.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dLabel.Location = new System.Drawing.Point(580, 19);
+            this.dLabel.Location = new System.Drawing.Point(670, 19);
             this.dLabel.Name = "dLabel";
             this.dLabel.Size = new System.Drawing.Size(37, 16);
             this.dLabel.TabIndex = 34;
@@ -189,11 +184,43 @@ namespace Digital_Photo_Diary.Windows_Forms
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(122, 233);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(452, 192);
+            this.panel1.TabIndex = 36;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Maiandra GD", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(403, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(54, 24);
+            this.button1.TabIndex = 37;
+            this.button1.Text = "View";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // showButton
+            // 
+            this.showButton.Font = new System.Drawing.Font("Maiandra GD", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showButton.Location = new System.Drawing.Point(57, 19);
+            this.showButton.Name = "showButton";
+            this.showButton.Size = new System.Drawing.Size(111, 24);
+            this.showButton.TabIndex = 38;
+            this.showButton.Text = "Show Events";
+            this.showButton.UseVisualStyleBackColor = true;
+            this.showButton.Click += new System.EventHandler(this.showButton_Click_1);
+            // 
             // SavedEvents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 485);
+            this.Controls.Add(this.showButton);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.dLabel);
             this.Controls.Add(this.iLabel);
@@ -205,14 +232,12 @@ namespace Digital_Photo_Diary.Windows_Forms
             this.Controls.Add(this.importanceLabel);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.saveButton);
-            this.Controls.Add(this.createPictureBox);
             this.Controls.Add(this.pictureLabel);
             this.Name = "SavedEvents";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Saved Events";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SavedEvents_FormClosing);
             this.Load += new System.EventHandler(this.SavedEvents_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.createPictureBox)).EndInit();
             this.storyGroupBox.ResumeLayout(false);
             this.storyGroupBox.PerformLayout();
             this.ResumeLayout(false);
@@ -225,7 +250,6 @@ namespace Digital_Photo_Diary.Windows_Forms
         private System.Windows.Forms.Label importanceLabel;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Button saveButton;
-        private System.Windows.Forms.PictureBox createPictureBox;
         private System.Windows.Forms.Label pictureLabel;
         private System.Windows.Forms.Label selectLabel;
         private System.Windows.Forms.ComboBox comboBox2;
@@ -236,5 +260,8 @@ namespace Digital_Photo_Diary.Windows_Forms
         private System.Windows.Forms.Label iLabel;
         private System.Windows.Forms.Label dLabel;
         private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button showButton;
     }
 }

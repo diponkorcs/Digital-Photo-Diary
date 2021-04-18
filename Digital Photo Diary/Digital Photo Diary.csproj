@@ -48,11 +48,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Codes\EventService.cs" />
+    <Compile Include="Codes\PicturesService.cs" />
     <Compile Include="Codes\UserRegistrationService.cs" />
     <Compile Include="Data Access Layer\DataAccess.cs" />
     <Compile Include="Data Access Layer\Entities\Events.cs" />
+    <Compile Include="Data Access Layer\Entities\Pictures.cs" />
     <Compile Include="Data Access Layer\Entities\User.cs" />
     <Compile Include="Data Access Layer\EventDataAccess.cs" />
+    <Compile Include="Data Access Layer\PicturesAccess.cs" />
     <Compile Include="Data Access Layer\UserDataAccess.cs" />
     <Compile Include="Windows Forms\CreateEvent.cs">
       <SubType>Form</SubType>

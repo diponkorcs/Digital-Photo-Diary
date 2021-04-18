@@ -52,6 +52,9 @@ namespace Digital_Photo_Diary
             //username = home.username;
             home.UserName(username);
 
+            PicturesService picturesService = new PicturesService();
+            picturesService.AddPictures(picture, eventnameTextBox.Text);
+
             EventService eventService = new EventService();
             eventService.AddEvents(eventnameTextBox.Text, storyTextBox.Text, dateTimePicker1.Text, importanceComboBox.Text, username);
 

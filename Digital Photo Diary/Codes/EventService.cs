@@ -31,5 +31,10 @@ namespace Digital_Photo_Diary.Codes
             this.eventDataAccess = new EventDataAccess();
             return this.eventDataAccess.AddEvents(events);
         }
+
+        public List<string> EventNames(string userName)
+        {
+            return this.eventDataAccess.EventNames(userName);
+        }
     }
 }

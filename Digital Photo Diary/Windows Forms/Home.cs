@@ -48,6 +48,7 @@ namespace Digital_Photo_Diary
         {
             SavedEvents sevent = new SavedEvents();
             sevent.Show();
+            sevent.UserName(username);
             this.Hide();
         }
 

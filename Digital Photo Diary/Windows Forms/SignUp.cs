@@ -50,7 +50,7 @@ namespace Digital_Photo_Diary
                 string result = registrationService.LoginValidation(nameTextBox.Text);
                 if (result == nameTextBox.Text)
                 {
-                    Home home = new Home();
+                    Home home = new Home(this);
                     home.Show();
                     this.Hide();
                 }

@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Codes\EventService.cs" />
     <Compile Include="Codes\UserRegistrationService.cs" />
     <Compile Include="Data Access Layer\DataAccess.cs" />
     <Compile Include="Data Access Layer\Entities\Events.cs" />

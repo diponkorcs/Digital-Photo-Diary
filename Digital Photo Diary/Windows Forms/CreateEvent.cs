@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Digital_Photo_Diary.Codes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,6 +38,9 @@ namespace Digital_Photo_Diary
 
         private void saveButton_Click(object sender, EventArgs e)
         {
+            EventService eventService = new EventService();
+            eventService.AddEvents(eventnameTextBox, storyTextBox, dateTimePicker1, importanceComboBox, gender, DateTimePicker, BloodGroupTextBox);
+
             MessageBox.Show("Your Event Saved Successfully.");
             Home home = new Home();
             home.Show();

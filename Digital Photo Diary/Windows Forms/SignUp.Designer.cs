@@ -222,5 +222,11 @@ namespace Digital_Photo_Diary
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button signUpButton;
+
+        public string NameTextBox
+        {
+            set { this.nameTextBox.Text = value; }
+            get { return this.nameTextBox.Text; }
+        }
     }
 }

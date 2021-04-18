@@ -14,5 +14,7 @@ namespace Digital_Photo_Diary.Data_Access_Layer
             string sql = "INSERT INTO Events(EventName, Story, EventDate, Importance, UserName) VALUES('" + events.EventName + "','" + events.Story + "','" + events.EventDate + "','" + events.Importance + "','" + events.UserName + "')";
             return this.ExecuteQuery(sql);
         }
+
+
     }
 }

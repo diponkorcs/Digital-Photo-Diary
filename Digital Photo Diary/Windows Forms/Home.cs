@@ -13,9 +13,13 @@ namespace Digital_Photo_Diary
 {
     public partial class Home : Form
     {
-        public Home()
+        SignUp signup;
+        string name = "";
+        public Home(SignUp signup)
         {
             InitializeComponent();
+            this.signup = signup;
+            name = this.signup.NameTextBox;
         }
 
         private void Home_FormClosing(object sender, FormClosingEventArgs e)
@@ -35,6 +39,11 @@ namespace Digital_Photo_Diary
             SavedEvents sevent = new SavedEvents();
             sevent.Show();
             this.Hide();
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

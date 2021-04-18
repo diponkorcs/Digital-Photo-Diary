@@ -36,13 +36,12 @@ namespace Digital_Photo_Diary
             this.storyTextBox = new System.Windows.Forms.TextBox();
             this.storyLabel = new System.Windows.Forms.Label();
             this.pictureLabel = new System.Windows.Forms.Label();
-            this.createPictureBox = new System.Windows.Forms.PictureBox();
             this.browseButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
             this.discardButton = new System.Windows.Forms.Button();
             this.importanceComboBox = new System.Windows.Forms.ComboBox();
             this.importanceLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.createPictureBox)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // nameLabel
@@ -113,14 +112,6 @@ namespace Digital_Photo_Diary
             this.pictureLabel.TabIndex = 6;
             this.pictureLabel.Text = "Add Picture";
             // 
-            // createPictureBox
-            // 
-            this.createPictureBox.Location = new System.Drawing.Point(126, 236);
-            this.createPictureBox.Name = "createPictureBox";
-            this.createPictureBox.Size = new System.Drawing.Size(192, 202);
-            this.createPictureBox.TabIndex = 7;
-            this.createPictureBox.TabStop = false;
-            // 
             // browseButton
             // 
             this.browseButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,6 +121,7 @@ namespace Digital_Photo_Diary
             this.browseButton.TabIndex = 8;
             this.browseButton.Text = "Browse";
             this.browseButton.UseVisualStyleBackColor = true;
+            this.browseButton.Click += new System.EventHandler(this.browseButton_Click);
             // 
             // saveButton
             // 
@@ -177,17 +169,24 @@ namespace Digital_Photo_Diary
             this.importanceLabel.TabIndex = 13;
             this.importanceLabel.Text = "Importance";
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(126, 236);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(231, 201);
+            this.panel1.TabIndex = 14;
+            // 
             // CreateEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(716, 485);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.importanceLabel);
             this.Controls.Add(this.importanceComboBox);
             this.Controls.Add(this.discardButton);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.browseButton);
-            this.Controls.Add(this.createPictureBox);
             this.Controls.Add(this.pictureLabel);
             this.Controls.Add(this.storyTextBox);
             this.Controls.Add(this.storyLabel);
@@ -199,8 +198,6 @@ namespace Digital_Photo_Diary
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create Event";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.createEvent_FormClosing);
-            //this.Load += new System.EventHandler(this.CreateEvent_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.createPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,11 +212,11 @@ namespace Digital_Photo_Diary
         private System.Windows.Forms.TextBox storyTextBox;
         private System.Windows.Forms.Label storyLabel;
         private System.Windows.Forms.Label pictureLabel;
-        private System.Windows.Forms.PictureBox createPictureBox;
         private System.Windows.Forms.Button browseButton;
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button discardButton;
         private System.Windows.Forms.ComboBox importanceComboBox;
         private System.Windows.Forms.Label importanceLabel;
+        private System.Windows.Forms.Panel panel1;
     }
 }

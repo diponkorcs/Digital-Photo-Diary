@@ -26,18 +26,5 @@ namespace Digital_Photo_Diary.Data_Access_Layer
             }
             return null;
         }
-        /*public User Search(string userName)
-        {
-            string sql = "SELECT * FROM Users WHERE UserName='" + userName +"'";
-            SqlDataReader reader = this.GetData(sql);
-            if (reader.Read())
-            {
-                User user = new User();
-                user.UserName = reader["UserName"].ToString();
-                return user;
-                //return Convert.ToInt32(reader["UserName"]);
-            }
-            return null;
-        }*/
     }
 }

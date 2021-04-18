@@ -49,7 +49,9 @@
   <ItemGroup>
     <Compile Include="Codes\UserRegistrationService.cs" />
     <Compile Include="Data Access Layer\DataAccess.cs" />
+    <Compile Include="Data Access Layer\Entities\Events.cs" />
     <Compile Include="Data Access Layer\Entities\User.cs" />
+    <Compile Include="Data Access Layer\EventDataAccess.cs" />
     <Compile Include="Data Access Layer\UserDataAccess.cs" />
     <Compile Include="Windows Forms\CreateEvent.cs">
       <SubType>Form</SubType>

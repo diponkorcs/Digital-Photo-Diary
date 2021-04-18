@@ -164,6 +164,7 @@ namespace Digital_Photo_Diary.Windows_Forms
             this.iLabel.Size = new System.Drawing.Size(83, 16);
             this.iLabel.TabIndex = 33;
             this.iLabel.Text = "Importance";
+            this.iLabel.Visible = false;
             // 
             // dLabel
             // 
@@ -174,6 +175,7 @@ namespace Digital_Photo_Diary.Windows_Forms
             this.dLabel.Size = new System.Drawing.Size(37, 16);
             this.dLabel.TabIndex = 34;
             this.dLabel.Text = "Date";
+            this.dLabel.Visible = false;
             // 
             // SavedEvents
             // 

@@ -12,6 +12,7 @@ namespace Digital_Photo_Diary
 {
     public partial class CreateEvent : Form
     {
+        string picture = "";
         public CreateEvent()
         {
             InitializeComponent();
@@ -48,7 +49,29 @@ namespace Digital_Photo_Diary
             dateTimePicker1.Text = "";
             storyTextBox.Text = "";
             importanceComboBox.Text = "";
-            createPictureBox.Image = null;
+            //createPictureBox.Image = null;
+        }
+
+        private void browseButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Image Files(*.jpg; *.jpeg; *.png; .bmp)|.jpg; *.jpeg; *.png; *.bmp";
+
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                picture = openFile.FileName;
+                PictureBox createPictureBox = new PictureBox();
+                //createPictureBox.Image = new Bitmap(picture);
+
+                Size size = createPictureBox.Size;
+                size.Height = 150;
+                size.Width = 150;
+                createPictureBox.Size = size;
+
+                createPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                createPictureBox.Image = Image.FromFile(picture);
+                panel1.Controls.Add(createPictureBox);
+            }
         }
     }
 }

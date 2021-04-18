@@ -211,7 +211,7 @@ namespace Digital_Photo_Diary
 
         private System.Windows.Forms.GroupBox loginGroupBox;
         private System.Windows.Forms.Label nameWarning;
-        private System.Windows.Forms.TextBox nameTextBox;
+        public System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Label emailWarning;
         public System.Windows.Forms.TextBox emailTextBox;

@@ -14,9 +14,15 @@ namespace Digital_Photo_Diary
     public partial class CreateEvent : Form
     {
         string picture = "";
+        public string username = "";
         public CreateEvent()
         {
             InitializeComponent();
+        }
+
+        public void UserName(string username)
+        {
+            this.username = username;
         }
 
         private void createEvent_FormClosing(object sender, FormClosingEventArgs e)
@@ -38,11 +44,19 @@ namespace Digital_Photo_Diary
 
         private void saveButton_Click(object sender, EventArgs e)
         {
+            /*SignUp signUp = new SignUp();
+            string username = signUp.nameTextBox.Text;
+
+            MessageBox.Show(""+username);*/
+            Home home = new Home();
+            //username = home.username;
+            home.UserName(username);
+
             EventService eventService = new EventService();
-            eventService.AddEvents(eventnameTextBox, storyTextBox, dateTimePicker1, importanceComboBox, gender, DateTimePicker, BloodGroupTextBox);
+            eventService.AddEvents(eventnameTextBox.Text, storyTextBox.Text, dateTimePicker1.Text, importanceComboBox.Text, username);
 
             MessageBox.Show("Your Event Saved Successfully.");
-            Home home = new Home();
+            
             home.Show();
             this.Hide();
         }

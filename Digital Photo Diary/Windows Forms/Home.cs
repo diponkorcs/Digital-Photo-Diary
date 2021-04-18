@@ -13,13 +13,22 @@ namespace Digital_Photo_Diary
 {
     public partial class Home : Form
     {
-        SignUp signup;
-        string name = "";
-        public Home(SignUp signup)
+        public string username = "";
+        /*SignUp signup;
+        string name = "";*/
+        public Home()
         {
             InitializeComponent();
-            this.signup = signup;
-            name = this.signup.NameTextBox;
+            /*this.signup = signup;
+            name = this.signup.NameTextBox;*/
+            /*SignUp signUp = new SignUp();
+            username = signUp.nameTextBox.Text;*/
+            
+        }
+
+        public void UserName(string username)
+        {
+            this.username = username;
         }
 
         private void Home_FormClosing(object sender, FormClosingEventArgs e)
@@ -31,6 +40,7 @@ namespace Digital_Photo_Diary
         {
             CreateEvent cevent = new CreateEvent();
             cevent.Show();
+            cevent.UserName(username);
             this.Hide();
         }
 

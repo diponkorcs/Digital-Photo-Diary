@@ -13,7 +13,7 @@ namespace Digital_Photo_Diary
 {
     public partial class SignUp : Form
     {
-
+        public string result = "";
         //Registration registration;
         //Opening opening;
         public SignUp()
@@ -47,10 +47,11 @@ namespace Digital_Photo_Diary
             else
             {
                 UserRegistrationService registrationService = new UserRegistrationService();
-                string result = registrationService.LoginValidation(nameTextBox.Text);
+                result = registrationService.LoginValidation(nameTextBox.Text);
                 if (result == nameTextBox.Text)
                 {
-                    Home home = new Home(this);
+                    Home home = new Home();
+                    home.UserName(nameTextBox.Text);
                     home.Show();
                     this.Hide();
                 }

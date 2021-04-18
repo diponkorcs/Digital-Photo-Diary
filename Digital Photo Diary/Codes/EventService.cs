@@ -17,7 +17,7 @@ namespace Digital_Photo_Diary.Codes
             this.eventDataAccess = new EventDataAccess();
         }
 
-        public int AddEvent(string eventName, string story, string eventDate, string importance, string userName)
+        public int AddEvents(string eventName, string story, string eventDate, string importance, string userName)
         {
             Events events = new Events()
             {
